@@ -19,7 +19,7 @@ const listproject = () => {
                       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                       ${data.map(pro => {
     return `
-                      <div class="border px-4 py-3 hover:shadow-lg">
+                      <div class="border px-4 py-3 hover:shadow-2xl opacity-90">
                       <div class="mb-2">
                         <a href="${pro.link}">
                           <img src="${pro.image}" alt="" class="w-full" />

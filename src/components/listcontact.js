@@ -34,20 +34,20 @@ const listcontact = () => {
     <div class="flex justify-between items-center my-[32px]">
         <div class="contact-left">
             <div><label for="">NAME:</label></div>
-            <div><input class="w-[320px] h-[40px]" type="text" placeholder="Enter your name..." id="ten" required></div>
+            <div><input class="w-[450px] h-[40px]" type="text" placeholder="Enter your name..." id="ten" required></div>
             <div><label for="">PHONE:</label></div>
-            <div> <input class="w-[320px] h-[40px]" type="text" placeholder="Enter phone..." id="phone" required></div>
+            <div> <input class="w-[450px] h-[40px]" type="text" placeholder="Enter phone..." id="phone" required></div>
         </div>
         <div class="contact-right">
             <div><label for="">EMAIL ADDRESS:</label></div>
-            <div><input class="w-[320px] h-[40px]" type="email" placeholder="Your email address..." id="email" required></div>
+            <div><input class="w-[450px] h-[40px] " type="email" placeholder="Your email address..." id="email" required></div>
         </div>
     </div>
     <div class="messages">
         <div><label for="">MESSAGES</label></div> <br>
         <textarea name="" id="messages" placeholder="Enter your messages..." cols="60" rows="7" required></textarea>
         <div class="pb-[32px]">
-            <button id="sb" class="bg-[black] w-[120px] px-4 text-white mt-4">Submit</button>
+            <button id="sb" class="bg-[black] w-[160px] h-8 rounded-lg px-4 text-white mt-4">Submit</button>
         </div>
     </div>
   </form>

@@ -8,7 +8,7 @@ const header = () => {
   <div class="grid grid-cols-1 lg:grid-cols-2 gap-[32px]">
     <div class="my-auto">
       <h1 class="text-[64px] font-bold">Xin chào, tôi là Thái Học <br> Tôi làm</h1>
-      <span class="text-2xl md:text-5xl font-bold ml-2 inline-block max-w-[140px] md:max-w-[360px] text">Web Developer</span>
+      <span class="text-2xl md:text-5xl font-bold ml-2 inline-block max-w-[140px] md:max-w-[360px] text mt-[64px]">Web Developer</span>
       <a href=""></a>
     </div>
     <div class="">

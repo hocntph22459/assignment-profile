@@ -23,25 +23,28 @@
         "email": "bimbimmiu1@gmail.com",
         "phone": "09873867151",
         "diachi": "Cẩm giàng - Hải dương",
-        "website":""
+        "website":"https://assignment-profile.vercel.app/"
       }
     ],
     "projects": [
       {
         "id": 1,
         "name": "Dự án mẫu",
+        "image" : "https://mauwebsite.vn/wp-content/uploads/2019/06/pixabay.jpg",
         "link":"https://github.com/hocntph22459/timup-web",
         "categoryId": 2
       },
       {
         "id": 2,
         "name": "Dự án 1",
+        "image" : "https://i.ytimg.com/vi/H7Hfrj9oWEg/maxresdefault.jpg",
         "link":"https://github.com/hocntph22459/da1",
         "categoryId": 2
       },
       {
         "id": 3,
         "name": "html css thuần",
+        "image" : "https://www.chili.vn/blogs/wp-content/uploads/2021/10/image5-4.jpg",
         "link":"",
         "categoryId": 2
       }
