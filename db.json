@@ -12,17 +12,20 @@
       },
       {
         "id": 3,
-        "name": "Contatc",
+        "name": "Contact",
         "path": "/"
       }
     ],
     "profile": [
       {
         "id": 1,
-        "image": "",
+        "image": "https://res.cloudinary.com/dpy2w5vus/image/upload/v1676875349/samples/test/ok_oefbos.jpg",
         "email": "bimbimmiu1@gmail.com",
         "phone": "09873867151",
-        "diachi": "Cẩm giàng - Hải dương",
+        "facebook" : "https://www.facebook.com/hoclnh",
+        "github" : "https://github.com/hocntph22459",
+        "school" : "FPT Polytechnic",
+        "address": "Cẩm giàng - Hải dương",
         "website":"https://assignment-profile.vercel.app/"
       }
     ],

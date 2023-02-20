@@ -28,8 +28,6 @@ const listabout = () => {
           alt="" aria-hidden="true"
           src="${profile.image}"></span><img
 
-
-
         alt="" src="/_next/image?url=%2Fphuy-about.jpeg&amp;w=750&amp;q=75" decoding="async" data-nimg="intrinsic"
         class="object-cover"
         style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"
@@ -49,11 +47,11 @@ const listabout = () => {
               <div class="py-3">
                 <h1 class="text-xl font-bold capitalize my-4">Thông tin cơ bản</h1>
                 <ul class="grid grid-cols-1 md:grid-cols-2 gap-y-2">
-                  <li><span class="w-[110px] inline-block">Học vấn<!-- -->:</span><span>FPT Polytechnic</span></li>
+                  <li><span class="w-[110px] inline-block">Học vấn<!-- -->:</span><span>${profile.school}</span></li>
                   <li><span class="w-[110px] inline-block">Điện thoại<!-- -->:</span><span>${profile.phone}</span></li>
                   <li><span class="w-[110px] inline-block">Email<!-- -->:</span><span>${profile.email}</span>
                   </li>
-                  <li><span class="w-[110px] inline-block">Địa chỉ<!-- -->:</span><span>${profile.diachi}</span></li>
+                  <li><span class="w-[110px] inline-block">Địa chỉ<!-- -->:</span><span>${profile.address}</span></li>
                   <li><span class="w-[110px] inline-block">Website<!-- -->:</span><span>${profile.website}</span>
                   </li>
                   <li><span class="w-[110px] inline-block">Nghề nghiệp<!-- -->:</span><span>Web developer</span></li>

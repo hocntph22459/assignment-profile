@@ -15,12 +15,10 @@ const header = () => {
             <li><span>Front-End Dev</span></li>
         </div>
     </div>
-
-
       <a href=""></a>
     </div>
     <div class="">
-      <img class="w-[100%]" class="rounded-xl" src="https://scontent.fhan19-1.fna.fbcdn.net/v/t39.30808-6/300960368_207541288262308_2476625993356792531_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=19026a&_nc_ohc=mmoZH8sChK8AX-xB7Ut&_nc_ht=scontent.fhan19-1.fna&oh=00_AfAOzAhyVxC3LTkqt6y1CWFu1OdiW-hF0OixrAqwETLNxA&oe=63F3BD07" alt="">
+      <img class="w-[100%]" class="rounded-xl" src="https://res.cloudinary.com/dpy2w5vus/image/upload/v1676875349/samples/test/ok_oefbos.jpg" alt="">
     </div>
   </div>
 </header>
