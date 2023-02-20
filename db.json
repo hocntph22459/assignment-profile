@@ -43,9 +43,9 @@
       },
       {
         "id": 3,
-        "name": "html css thuần",
+        "name": "fudo food",
         "image" : "https://www.chili.vn/blogs/wp-content/uploads/2021/10/image5-4.jpg",
-        "link":"",
+        "link":"https://github.com/hocntph22459/fudo-web",
         "categoryId": 2
       }
     ]
