@@ -14,7 +14,9 @@ const listproject = () => {
 
                     <div class="bg-white dark:bg-dark-200 px-8" id="about">
                       <div class="py-8 dark:text-white px-[12px]">
-                      <div class="text-4xl  text-left	 md:text-6xl font-bold text-center mb-10" style="opacity: 1; transform: none;">Project
+                      <div class="text">
+                      <h5 class="text-[32px] mt-[64px]">CÁC DỰ ÁN CỦA TÔI</h5>
+                    </div>
                       </div>
                       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                       ${data.map(pro => {
@@ -28,7 +30,7 @@ const listproject = () => {
                       <h3>
                         <a href="" class="block font-bold text-xl text-orange-500 mb-3">${pro.name}</a>
                       </h3>
-                      <p>chi tiết</p>
+                      <a href="/project/${pro.id}" <p>chi tiết</p></a>
                     </div>
                       `
   }).join("")}

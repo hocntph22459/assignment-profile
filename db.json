@@ -1,55 +1,77 @@
 {
-    "categories": [
-      {
-        "id": 1,
-        "name": "About",
-        "path": "/"
-      },
-      {
-        "id": 2,
-        "name": "Project",
-        "path": "/"
-      },
-      {
-        "id": 3,
-        "name": "Contact",
-        "path": "/"
-      }
-    ],
-    "profile": [
-      {
-        "id": 1,
-        "image": "https://res.cloudinary.com/dpy2w5vus/image/upload/v1676875349/samples/test/ok_oefbos.jpg",
-        "email": "bimbimmiu1@gmail.com",
-        "phone": "09873867151",
-        "facebook" : "https://www.facebook.com/hoclnh",
-        "github" : "https://github.com/hocntph22459",
-        "school" : "FPT Polytechnic",
-        "address": "Cẩm giàng - Hải dương",
-        "website":"https://assignment-profile.vercel.app/"
-      }
-    ],
-    "projects": [
-      {
-        "id": 1,
-        "name": "Dự án mẫu",
-        "image" : "https://mauwebsite.vn/wp-content/uploads/2019/06/pixabay.jpg",
-        "link":"https://github.com/hocntph22459/timup-web",
-        "categoryId": 2
-      },
-      {
-        "id": 2,
-        "name": "Dự án 1",
-        "image" : "https://i.ytimg.com/vi/H7Hfrj9oWEg/maxresdefault.jpg",
-        "link":"https://github.com/hocntph22459/da1",
-        "categoryId": 2
-      },
-      {
-        "id": 3,
-        "name": "fudo food",
-        "image" : "https://www.chili.vn/blogs/wp-content/uploads/2021/10/image5-4.jpg",
-        "link":"https://github.com/hocntph22459/fudo-web",
-        "categoryId": 2
-      }
-    ]
-  }
+  "categories": [
+    {
+      "id": 1,
+      "name": "About",
+      "path": "/about"
+    },
+    {
+      "id": 2,
+      "name": "Project",
+      "path": "/project"
+    },
+    {
+      "id": 3,
+      "name": "Contact",
+      "path": "/contact"
+    }
+  ],
+  "profile": [
+    {
+      "id": 1,
+      "image": "https://res.cloudinary.com/dpy2w5vus/image/upload/v1676875349/samples/test/ok_oefbos.jpg",
+      "about": "Hiện tại, mình đang là sinh viên kì 5 tại trường Cao Đẳng FPT Polytechnic. Mình bắt đầu học lập trình từ tháng 8 năm 2021 và phần lớn thời gian trong ngày mình đều ngồi học code. Ngoài việc học tập trên trường thì mình thường xuyên học thêm trên F8 Fullstack và trên các kênh Youtube như evondev, easy frontend,...",
+      "target": "Mình thực sự thích code và thử thách bản thân học được nhiều cái mới vào mỗi ngày mới. Mục tiêu hiện tại của mình là trở thành một lập trình viên Frontend.",
+      "email": "bimbimmiu1@gmail.com",
+      "phone": "09873867151",
+      "facebook": "https://www.facebook.com/hoclnh",
+      "github": "https://github.com/hocntph22459",
+      "school": "FPT Polytechnic",
+      "address": "Cẩm giàng - Hải dương",
+      "website": "https://assignment-profile.vercel.app/"
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "name": "Dự án mẫu",
+      "image": "https://mauwebsite.vn/wp-content/uploads/2019/06/pixabay.jpg",
+      "link": "https://github.com/hocntph22459/timup-web",
+      "deltail": "Cụ thể, chia sẻ về lý do theo đuổi ngành Ứng dụng phần mềm, Thanh Hồ cho biết, từ lâu anh chàng đã yêu thích việc tìm hiểu về Công nghệ thông tin, được làm việc với những con số, thuật toán chính là đam mê của Thanh Hồ. Cũng vì thế, Thanh Hồ đã tìm hiểu và quyết định đăng ký theo học tại Cao đẳng FPT Polytechnic – một trong những ngôi trường đào tạo uy tín về các khối ngành Công nghệ.",
+      "categoryId": 2
+    },
+    {
+      "id": 2,
+      "name": "Dự án 1",
+      "image": "https://i.ytimg.com/vi/H7Hfrj9oWEg/maxresdefault.jpg",
+      "link": "https://github.com/hocntph22459/da1",
+      "deltail": "Cụ thể, chia sẻ về lý do theo đuổi ngành Ứng dụng phần mềm, Thanh Hồ cho biết, từ lâu anh chàng đã yêu thích việc tìm hiểu về Công nghệ thông tin, được làm việc với những con số, thuật toán chính là đam mê của Thanh Hồ. Cũng vì thế, Thanh Hồ đã tìm hiểu và quyết định đăng ký theo học tại Cao đẳng FPT Polytechnic – một trong những ngôi trường đào tạo uy tín về các khối ngành Công nghệ.",
+      "categoryId": 2
+    },
+    {
+      "id": 3,
+      "name": "fudo food",
+      "image": "https://www.chili.vn/blogs/wp-content/uploads/2021/10/image5-4.jpg",
+      "link": "https://github.com/hocntph22459/fudo-web",
+      "deltail": "Cụ thể, chia sẻ về lý do theo đuổi ngành Ứng dụng phần mềm, Thanh Hồ cho biết, từ lâu anh chàng đã yêu thích việc tìm hiểu về Công nghệ thông tin, được làm việc với những con số, thuật toán chính là đam mê của Thanh Hồ. Cũng vì thế, Thanh Hồ đã tìm hiểu và quyết định đăng ký theo học tại Cao đẳng FPT Polytechnic – một trong những ngôi trường đào tạo uy tín về các khối ngành Công nghệ.",
+      "categoryId": 2
+    }
+  ],
+  "admin": [
+    {
+      "name": "admin"
+    },
+    {
+      "password": "admin123"
+    }
+  ],
+  "contact": [
+    {
+      "name": "aa",
+      "phone": "973867151",
+      "email": "minhieu888@fpt.edu.vn",
+      "messages": "tôi cần ffff",
+      "id": 1
+    }
+  ]
+}

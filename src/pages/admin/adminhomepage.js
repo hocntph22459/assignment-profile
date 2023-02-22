@@ -1,38 +1,12 @@
-// import axios from "axios"
-import axios from "axios"
-import { getmenus } from "../api/listmenu"
-import { useEffect, useState } from "../libs"
 
-const navbar = () => {
-  const [data, setdata] = useState([])
-  useEffect(() => {
-    getmenus()
-      .then(({ data }) => setdata(data))
-  }, [])
-
-  // useEffect(() => {
-  //   const btns = document.querySelectorAll('#btn-cate')
-  //   for (const btn of btns) {
-  //     btn.addEventListener('click', function () {
-  //       const id = btn.dataset.id;
-  //       return showproject(id)
-  //     })
-  //   }
-  // })
-
-  // const showproject = (id) => {
-  //   const [data, setdata] = useState([])
-  //   console.log(id);
-  //   axios.get(`http://localhost:3000/categories/${id}?_embed=projects`)
-  //     .then(({ data }) => setdata(data))
-  // }
-
+const adminhomepage = () => {
   return `
-    </div>
+  
+  </div>
             <nav class=" border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
             <div class="container flex flex-wrap items-center justify-between mx-auto">
             <a href="/" class="flex items-center">
-                <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">hocclnh ❤</span>
+                <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">admin</span>
             </a>
             <div class="flex md:order-2">
               <button type="button" data-collapse-toggle="navbar-search" aria-controls="navbar-search" aria-expanded="false" class="md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1" >
@@ -59,13 +33,15 @@ const navbar = () => {
                   <input type="text" id="search-navbar" class="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search...">
                 </div>
                 <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:dark:bg-gray-900 dark:border-gray-700">
-                  ${data.map(nav => {
-    return `
-    <li>
-    <a href="${nav.path}" class="text-[20px] block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">${nav.name}</a>
-  </li>
-                    `
-  }).join("")}
+                <li>
+                <a href="/admin/menu" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">category</a>
+              </li>
+              <li>
+                <a href="/admin/project" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">project</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+              </li>
           </ul>
           
         </div>
@@ -76,4 +52,4 @@ const navbar = () => {
   `
 }
 
-export default navbar
+export default adminhomepage

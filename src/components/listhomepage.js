@@ -1,15 +1,13 @@
 import { getprofile } from "../api/profile";
 import { useEffect, useState } from "../libs";
+const listhomepage = () => {
+    const [data, setdata] = useState([]);
 
-const listabout = () => {
-  const [data, setdata] = useState([]);
-
-  useEffect(() => {
-    getprofile()
-      .then(({ data }) => setdata(data))
-  }, [])
+    useEffect(() => {
+      getprofile()
+        .then(({ data }) => setdata(data))
+    }, [])
   return `
- 
   <section class="mx-auto my-[64px] px-[12px]">
   ${data.map(profile => {
     return `
@@ -32,6 +30,7 @@ const listabout = () => {
         style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"
         srcset="/_next/image?url=%2Fphuy-about.jpeg&amp;w=384&amp;q=75 1x, /_next/image?url=%2Fphuy-about.jpeg&amp;w=750&amp;q=75 2x"></span>
   </div>
+
             <div class="flex-1 ">
               <div class="pb-4 border-b border-gray-500">
                 <h2 class="text-3xl font-bold my-3">Một chút về tôi</h2>
@@ -63,6 +62,7 @@ const listabout = () => {
   
 </section>
   `
+  
 }
 
-export default listabout
+export default listhomepage

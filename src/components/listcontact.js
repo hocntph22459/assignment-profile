@@ -1,35 +1,30 @@
-// import { useEffect } from "../libs";
+import axios from "axios";
+import { useEffect } from "../libs";
 const listcontact = () => {
   // form inndex
-  // useEffect(() => {
-  //   const form = document.getElementById("form");
-  //   const ten = document.getElementById("ten");
-  //   const phone = document.getElementById("phone");
-  //   const email = document.getElementById("email");
-  //   const messages = document.getElementById("messages");
+  useEffect(() => {
+    const form = document.getElementById("form");
+    const ten = document.getElementById("ten");
+    const phone = document.getElementById("phone");
+    const email = document.getElementById("email");
+    const messages = document.getElementById("messages");
 
-  //   form.addEventListener("submit", (e) => {
-  //     e.preventDefault()
-  //     if (ten.value == 0 || phone.value == 0 || email.value == 0 || messages.value == 0) {
-  //       alert("phải nhập tất cả các trường");
-  //       ten.style.background = "#F7F6AB";
-  //       phone.style.background = "#F7F6AB";
-  //       email.style.background = "#F7F6AB";
-  //       messages.style.background = "#F7F6AB"
-  //       return false;
-  //     }
-  //   })
-  // })
+    form.addEventListener("submit", (e) => {
+      e.preventDefault()
+      const newcontact = {
+        name:ten.value,
+        phone:phone.value,
+        email:email.value,
+        messages:messages.value,
+      }
+      axios.post(`http://localhost:3000/contact`,newcontact)
+      .then(()=>alert('gửi liên hệ cho chúng tôi thành công'))
+    })
+  })
   return `
   <section class="mx-auto my-[64px] px-[12px]">
   <div class="bg-white dark:bg-dark-200 px-8" id="about">
     <div class="max-w-6xl mx-auto">
-      <div class="py-8 dark:text-white">
-        <div class="text-4xl md:text-6xl font-bold text-center mb-10" style="opacity: 1; transform: none;">Contact</div>
-      </div>
-      <div class="text">
-        <h5 class="sm:text-center text-[32px]">Hiện đang tích cực tìm kiếm Frontend Developer Internship</h5>
-      </div>
       <div class="flex justify-center items-end pt-[32px]">
         <div class="pr-[12px]">
           <a href="https://github.com/hocntph22459">

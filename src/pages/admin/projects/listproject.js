@@ -1,0 +1,59 @@
+import axios from "axios";
+import { router, useEffect, useState } from "../../../libs";
+const listproject = () => {
+    const [data, setdata] = useState([]);
+
+    useEffect(() => {
+        axios.get("http://localhost:3000/projects")
+            .then(({ data }) => setdata(data))
+    }, [])
+    useEffect(() => {
+        const btns = document.querySelectorAll("#btn-xoa")
+        for (let btn of btns) {
+            const id = btn.dataset.id;
+            btn.addEventListener("click", () => {
+                const project = data.filter((project) => {
+                    return project.id != id;
+                })
+                setdata(data)
+                axios.delete(`http://localhost:3000/projects/${id}`)
+                    .then(() => router.navigate('/admin/project'))
+            })
+
+        }
+    })
+  return `
+  <h1 class="text-[40px]">project</h1>
+  <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+    <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+    <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+            <tr>
+      <th scope="col" class="px-6 py-3">id</th>
+      <th scope="col" class="px-6 py-3">name</th>
+      <th scope="col" class="px-6 py-3">image</th>
+      <th scope="col" class="px-6 py-3">github</th>
+      <th scope="col" class="px-6 py-3">
+      <a href="/admin/project/add">thêm</a>
+      </th>
+    </tr>
+  </thead>
+  <tbody class="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
+  ${data.map(pro => {
+        return `
+    <tr>
+    <td class="px-6 py-8">${pro.id}</td>
+    <td class="px-6 py-8">${pro.name}</td>
+    <td class="px-6 py-8">${pro.image}</td>
+    <td class="px-6 py-8">${pro.link}</td>
+    <td class="px-6 py-8">
+      <button onclick="return confirm('bạn có chắc xóa không')" class="font-medium text-blue-600 dark:text-blue-500 hover:underline" data-id="${pro.id}" id="btn-xoa">xóa</button>
+      <a class="font-medium text-blue-600 dark:text-blue-500 hover:underline" href="/admin/project/edit/${pro.id}">sửa</a>
+    </td>
+  </tr>
+    `
+    }).join("")}
+    </div>
+  `
+}
+
+export default listproject

@@ -10,7 +10,7 @@ const footer = () => {
   }, [])
   return `
  
-  <section class="mx-auto">
+  <section>
   ${data.map(profile => {
     return `
     <div class="px-4 py-6 bg-gray-100 dark:bg-gray-700 md:flex md:items-center md:justify-between">
