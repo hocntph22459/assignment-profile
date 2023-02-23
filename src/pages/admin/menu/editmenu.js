@@ -1,5 +1,6 @@
 import axios from "axios";
 import { router, useEffect, useState } from "../../../libs";
+import adminhomepage from "../adminhomepage";
 
 const editmenu = ({data:{id}}) => {
 
@@ -26,6 +27,7 @@ const editmenu = ({data:{id}}) => {
     })
 
   return `
+  ${adminhomepage()}
   <form action="" id="form" class="w-[500px]" mx-auto>
   <h2 class="my-[32px] text-[32px]">thêm mới menu</h2>
   <div class="mb-6">

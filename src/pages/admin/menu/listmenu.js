@@ -1,5 +1,6 @@
 import axios from "axios";
 import { router, useEffect, useState } from "../../../libs";
+import adminhomepage from "../adminhomepage";
 
 const listmenu = () => {
     const [data, setdata] = useState([]);
@@ -24,6 +25,7 @@ const listmenu = () => {
         }
     })
     return `
+  ${adminhomepage()}
   <h1 class="text-[40px]">menu</h1>
   <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
     <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">

@@ -1,9 +1,12 @@
 import { render, router } from "./libs";
 import aboutpage from "./pages/aboutpage";
 import adminhomepage from "./pages/admin/adminhomepage";
+import listcontact from "./pages/admin/contact/listcontact";
 import addmenu from "./pages/admin/menu/addmenu";
 import editmenu from "./pages/admin/menu/editmenu";
 import listmenu from "./pages/admin/menu/listmenu";
+import editprofile from "./pages/admin/profile/editprofile";
+import listprofile from "./pages/admin/profile/listprofile";
 import addproject from "./pages/admin/projects/addproject";
 import editproject from "./pages/admin/projects/editproject";
 import listproject from "./pages/admin/projects/listproject";
@@ -70,6 +73,21 @@ router.on('/admin/project/edit/:id', (parmas) => {
     return editproject(parmas)
   },app)
 })
+// admin contact
+router.on('/admin/contact', () => {
+  render(listcontact,app)
+})
+
+// admin profile
+router.on('/admin/profile', () => {
+  render(listprofile,app)
+})
+router.on('/admin/profile/edit/:id', (parmas) => {
+  render(()=>{
+    return editprofile(parmas)
+  },app)
+})
+
 
 router.resolve()
 

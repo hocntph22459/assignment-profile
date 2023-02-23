@@ -1,5 +1,6 @@
 import axios from "axios";
 import { router, useEffect, useState } from "../../../libs";
+import adminhomepage from "../adminhomepage";
 const listproject = () => {
     const [data, setdata] = useState([]);
 
@@ -23,6 +24,7 @@ const listproject = () => {
         }
     })
   return `
+  ${adminhomepage()}
   <h1 class="text-[40px]">project</h1>
   <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
     <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
@@ -32,6 +34,7 @@ const listproject = () => {
       <th scope="col" class="px-6 py-3">name</th>
       <th scope="col" class="px-6 py-3">image</th>
       <th scope="col" class="px-6 py-3">github</th>
+      <th scope="col" class="px-6 py-3">chi tiết</th>
       <th scope="col" class="px-6 py-3">
       <a href="/admin/project/add">thêm</a>
       </th>
@@ -45,6 +48,7 @@ const listproject = () => {
     <td class="px-6 py-8">${pro.name}</td>
     <td class="px-6 py-8">${pro.image}</td>
     <td class="px-6 py-8">${pro.link}</td>
+    <td class="px-6 py-8">${pro.deltail}</td>
     <td class="px-6 py-8">
       <button onclick="return confirm('bạn có chắc xóa không')" class="font-medium text-blue-600 dark:text-blue-500 hover:underline" data-id="${pro.id}" id="btn-xoa">xóa</button>
       <a class="font-medium text-blue-600 dark:text-blue-500 hover:underline" href="/admin/project/edit/${pro.id}">sửa</a>

@@ -24,27 +24,8 @@ const listcontact = () => {
   return `
   <section class="mx-auto my-[64px] px-[12px]">
   <div class="bg-white dark:bg-dark-200 px-8" id="about">
-    <div class="max-w-6xl mx-auto">
-      <div class="flex justify-center items-end pt-[32px]">
-        <div class="pr-[12px]">
-          <a href="https://github.com/hocntph22459">
-            <img class="w-[150px] lg:w-[60px]" src="https://phuy.vercel.app/github.svg" alt="">
-          </a>
-        </div>
-        <div class="pr-[12px]">
-          <a href="mailto:bimbimmiu1@gmail.com">
-            <img class="w-[150px] lg:w-[60px]" src="https://phuy.vercel.app/gmail.svg" alt="">
-          </a>
-        </div>
-        <div class="pr-[12px]">
-          <a href="https://www.facebook.com/hoclnh">
-            <img class="w-[150px] lg:w-[60px]" src="https://phuy.vercel.app/facebook.svg" alt="">
-          </a>
-        </div>
-      </div>
-    </div>
     <div class="text">
-      <h5 class="sm:text-center text-[32px] mt-[64px]">LIÊN HỆ CHO TÔI</h5>
+      <h5 class="text-[32px] mt-[64px]">LIÊN HỆ CHO TÔI</h5>
     </div>
     <form class="my-[64px]" action="" id="form">
   <div class="lg:flex justify-between my-[32px]">
@@ -82,7 +63,23 @@ const listcontact = () => {
   </div>
   </div>
 
-  
+  <div class="flex justify-center items-end pt-[32px]">
+  <div class="pr-[12px]">
+    <a href="https://github.com/hocntph22459">
+      <img class="w-[150px] lg:w-[60px]" src="https://phuy.vercel.app/github.svg" alt="">
+    </a>
+  </div>
+  <div class="pr-[12px]">
+    <a href="mailto:bimbimmiu1@gmail.com">
+      <img class="w-[150px] lg:w-[60px]" src="https://phuy.vercel.app/gmail.svg" alt="">
+    </a>
+  </div>
+  <div class="pr-[12px]">
+    <a href="https://www.facebook.com/hoclnh">
+      <img class="w-[150px] lg:w-[60px]" src="https://phuy.vercel.app/facebook.svg" alt="">
+    </a>
+  </div>
+</div>
 </section>
 
 

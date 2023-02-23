@@ -1,5 +1,6 @@
 import axios from "axios";
 import { router, useEffect } from "../../../libs";
+import adminhomepage from "../adminhomepage";
 
 const addmenu = () => {
     useEffect(()=>{
@@ -17,6 +18,7 @@ const addmenu = () => {
         })
     })
   return `
+  ${adminhomepage()}
   <form action="" id="form" class="w-[500px]" mx-auto>
   <h2 class="my-[32px] text-[32px]">thêm mới menu</h2>
   <div class="mb-6">
